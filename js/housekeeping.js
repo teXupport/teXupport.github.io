@@ -1,6 +1,6 @@
-/**$(function() {
-	COMMENTS = new RegExp('/<!--[\s\S]*?-->/g');
+$(function() {
+	var regex = '/<!--[\s\S]*?-->/g';
 	
-	html = $('body').html();
-	$('body').html(html.replace(COMMENTS));
-});**/
+	var html = $('body').html();
+	$('body').html(html.replace(/<!--[\s\S]*?-->/g, ""));
+});
