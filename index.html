@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<?php
+$data = 
+'<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -26,7 +28,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- WARNING: Respond.js doesn\'t work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -181,7 +183,7 @@
                     <p>Tyler Winkleman is an undergraduate student at Southern Illinois University Carbondale who is pursuing a Bachelor of Science degree, majoring in Information Systems Technologies and minoring in Computer Science. His primary focus is web and mobile development.</p>
                 </div>
                 <div class="col-lg-4">
-                    <p>He is currently employed on SIU's campus at SalukiTech. His skills and interests include web development, mobile development, IoT hacks, and robotics. Tyler is a member of SIUC Robotics (also known as ATMAE), performing the role of head programmer.</p>
+                    <p>He is currently employed on SIU\'s campus at SalukiTech. His skills and interests include web development, mobile development, IoT hacks, and robotics. Tyler is a member of SIUC Robotics (also known as ATMAE), performing the role of head programmer.</p>
                 </div>
             </div>
         </div>
@@ -548,3 +550,6 @@
 </body>
 
 </html>
+';
+
+$data = preg_replace('/<!--[^[if](.|\s)*?-->/', '', $data);
