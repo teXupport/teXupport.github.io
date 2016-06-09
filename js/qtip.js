@@ -1,3 +1,3 @@
 $(function() {
-	$('a[value]').qtip();
+	//$('a[value]').qtip();
 });
