@@ -1,0 +1,3 @@
+$(function() {
+	$('a[value]').qtip();
+});
